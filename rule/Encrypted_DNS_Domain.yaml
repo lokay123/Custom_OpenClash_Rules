@@ -1,7 +1,7 @@
 # Generated from rule/Encrypted_DNS.list
 # REPO: https://github.com/Aethersailor/Custom_OpenClash_Rules
 # SOURCE: https://github.com/Aethersailor/Custom_OpenClash_Rules/blob/main/rule/Encrypted_DNS.list
-# TOTAL: 3323
+# TOTAL: 3328
 
 payload:
   - '+.003153.xyz'
@@ -100,6 +100,7 @@ payload:
   - '+.adblock.renedis.nl'
   - '+.adblocker.institutobancario.edu.mx'
   - '+.adblockersite.com'
+  - '+.addns.886675.xyz'
   - '+.addns.jpr.space'
   - '+.addns.jujuland.net'
   - '+.addns.ovalie.ovh'
@@ -715,6 +716,7 @@ payload:
   - '+.disinformer.mooo.com'
   - '+.diskstation.alexpollard.net'
   - '+.djtesok.ddns.net'
+  - '+.dltuykfgp.top'
   - '+.dmit.wangjiaqi.store'
   - '+.dmjp.joeyl.de'
   - '+.dn.kyay006.cn'
@@ -1617,6 +1619,7 @@ payload:
   - '+.dns.youni.win'
   - '+.dns.ytpom.ru'
   - '+.dns.yu.dev'
+  - '+.dns.yunzheng.space'
   - '+.dns.yuu-g.net'
   - '+.dns.yuyz.net'
   - '+.dns.yuzia.cc'
@@ -1974,7 +1977,7 @@ payload:
   - '+.dot-jp.blahdns.com'
   - '+.dot-sg.blahdns.com'
   - '+.dot.360.cn'
-  - '+.dot.asecdns.com'
+  - '+.dot.886675.xyz'
   - '+.dot.centraleu.pi-dns.com'
   - '+.dot.cox.net'
   - '+.dot.eastas.pi-dns.com'
@@ -2048,6 +2051,7 @@ payload:
   - '+.facomunit.ddns.net'
   - '+.family.adguarddns.com'
   - '+.family.dns.doubleangels.com'
+  - '+.family.dns.dremaxx.com'
   - '+.family.dns.teknoholistik.com'
   - '+.family.dot.dns.yandex.net'
   - '+.family.mydns.network'
@@ -2679,6 +2683,7 @@ payload:
   - '+.online.zotio.ru'
   - '+.oowo.de'
   - '+.open-resolver1.unima.ac.id'
+  - '+.open.dns.dremaxx.com'
   - '+.openbld.net'
   - '+.opencdn.jomodns.com'
   - '+.opendns.com'
