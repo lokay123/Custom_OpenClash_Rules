@@ -8,6 +8,7 @@
 # ImmortalWrt 相关
 DOMAIN-SUFFIX,immortalwrt.org
 #DOMAIN-SUFFIX,kyarucloud.moe
+DOMAIN-SUFFIX,r2s.site
 
 # Tailscale
 DOMAIN-SUFFIX,tailscale.com
@@ -346,6 +347,64 @@ DOMAIN-SUFFIX,ahlt10010.com
 # 以下是准备向 GeoSite 上游仓库提交 PR 的国内冷门域名，收录后会注释对应内容
 # ---------------------------------------
 # 以下域名待提交 PR
+# add by Rule-Bot Client / Date: 2026-10-10 02:16:23
+DOMAIN-SUFFIX,naitanghuyu.com
+# add by Rule-Bot Client / Date: 2026-10-10 01:17:20
+DOMAIN-SUFFIX,yi-ll.com
+# add by Rule-Bot Client / Date: 2026-10-10 01:17:18
+DOMAIN-SUFFIX,sgllife.com
+# add by Rule-Bot Client / Date: 2026-10-10 01:17:15
+DOMAIN-SUFFIX,bs-iot.com
+# add by Rule-Bot Client / Date: 2026-10-10 01:17:13
+DOMAIN-SUFFIX,thejoyridegames.com
+# add by Rule-Bot Client / Date: 2026-10-10 01:16:15
+DOMAIN-SUFFIX,wisecleaner.net
+# add by Rule-Bot Client / Date: 2026-10-10 00:17:20
+DOMAIN-SUFFIX,szfx.top
+# add by Rule-Bot Client / Date: 2026-10-10 00:17:17
+DOMAIN-SUFFIX,bitauto.hk
+# add by Rule-Bot Client / Date: 2026-10-10 00:17:14
+DOMAIN-SUFFIX,aoxox.com
+# add by Rule-Bot Client / Date: 2026-10-10 00:17:11
+DOMAIN-SUFFIX,yshoufa.com
+# add by Rule-Bot Client / Date: 2026-10-10 00:16:48
+DOMAIN-SUFFIX,shenzhendongwei.com
+# add by Rule-Bot Client / Date: 2026-10-10 00:16:45
+DOMAIN-SUFFIX,sjyywy.com
+# add by Rule-Bot Client / Date: 2026-10-10 00:16:39
+DOMAIN-SUFFIX,pailedi.com
+# add by Rule-Bot Client / Date: 2026-10-10 00:16:10
+DOMAIN-SUFFIX,tange365.com
+# add by Rule-Bot Client / Date: 2026-10-10 00:15:47
+DOMAIN-SUFFIX,112114.eu.org
+# add by Rule-Bot Client / Date: 2026-10-08 21:57:38
+DOMAIN-SUFFIX,fm-vip.com
+# add by Rule-Bot Client / Date: 2026-10-07 23:49:27
+DOMAIN-SUFFIX,zzz-hp.top
+# 锦州公交 / add by Telegram user: alonginwind / Date: 2026-10-05 08:48:19
+DOMAIN-SUFFIX,jzgj.com
+# add by Rule-Bot Client / Date: 2026-10-02 21:40:57
+DOMAIN-SUFFIX,maxdo.tech
+# 大童保险 / add by Telegram user: MystraGood / Date: 2026-10-01 20:23:45
+DOMAIN-SUFFIX,dtinsure.com
+# add by Telegram user: Cyboot / Date: 2026-10-01 19:49:41
+DOMAIN-SUFFIX,4942.cc
+# add by Rule-Bot Client / Date: 2026-10-01 13:11:54
+DOMAIN-SUFFIX,gxcould.com
+# add by Telegram user: alonginwind / Date: 2026-09-30 21:03:22
+DOMAIN-SUFFIX,hclassplatform.com
+# add by Rule-Bot Client / Date: 2026-09-29 11:17:56
+DOMAIN-SUFFIX,e0x233.com
+# add by Rule-Bot Client / Date: 2026-09-29 11:17:53
+DOMAIN-SUFFIX,grz-hx.com
+# add by Rule-Bot Client / Date: 2026-09-29 09:26:45
+DOMAIN-SUFFIX,feiniugo.com
+# add by Telegram user: pangxiaopang666 / Date: 2026-09-28 09:55:29
+DOMAIN-SUFFIX,inextos.com
+# add by Rule-Bot Client / Date: 2026-09-28 08:03:29
+DOMAIN-SUFFIX,hzttwl.com
+# add by Rule-Bot Client / Date: 2026-09-28 06:10:59
+DOMAIN-SUFFIX,aiyohoo.com
 # add by Rule-Bot Client / Date: 2026-09-27 19:40:33
 DOMAIN-SUFFIX,hsdxdl.com
 # add by Rule-Bot Client / Date: 2026-09-27 16:05:59
