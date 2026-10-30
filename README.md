@@ -56,6 +56,11 @@
 
 ## ⚠️ 特别声明
 
+> [!IMPORTANT]
+> **项目边界声明**
+>
+> 本项目不提供可供用户使用的代理服务器、代理节点或节点订阅，不运营「机场」等代理服务，也不提供网络接入服务。本项目及其维护者与上述服务提供者不存在合作、代理或担保关系。
+
 > [!WARNING]
 > 使用本项目前，请展开并完整阅读下方声明。
 
@@ -214,7 +219,6 @@ OpenClash `dev` 版当前已内置本项目全部 8 个订阅转换模板，包�
 
 - 单功能覆写模块：[`overwrite/`](overwrite/)
 - YAML 配置远程覆写模块：[`overwrite/yaml/`](overwrite/yaml/)
-- 广告拦截与 hosts 格式支持说明：[`overwrite/adblock/`](overwrite/adblock/)
 
 ---
 

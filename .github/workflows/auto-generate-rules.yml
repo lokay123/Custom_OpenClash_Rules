@@ -18,15 +18,7 @@ on:
       - 'rule/Game_Download_CDN.list'
       - 'rule/game_rule/**/*.list'
       - 'py/generate_rules.py'
-      - 'py/generate_stash_configs.py'
       - 'cfg/Custom_Clash.ini'
-      - 'cfg/Custom_Clash_Fallback.ini'
-      - 'cfg/Custom_Clash_Lite.ini'
-      - 'cfg/Custom_Clash_Lite_Fallback.ini'
-      - 'cfg/Custom_Clash_GFW.ini'
-      - 'cfg/Custom_Clash_GFW_Fallback.ini'
-      - 'cfg/Custom_Clash_Full.ini'
-      - 'cfg/Custom_Clash_Full_Fallback.ini'
   workflow_dispatch:
     inputs:
       source_before_sha:
@@ -57,7 +49,7 @@ jobs:
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
         with:
           python-version: '3.13'
 
@@ -85,16 +77,6 @@ jobs:
 
       - name: Set up pinned Mihomo
         uses: ./.github/actions/setup-mihomo
-
-      - name: Generate derived rules and Mainland compatibility template
-        run: |
-          python py/generate_rules.py --mihomo mihomo
-          python py/generate_stash_configs.py --target mainland
-
-      - name: Test generation and conversion logic
-        run: |
-          python py/generate_rules.py --check --mihomo mihomo
-          python py/generate_stash_configs.py --check --target mainland
 
       - name: Commit and push changes
         id: publish
@@ -129,9 +111,7 @@ jobs:
             git fetch --no-tags origin main
             git reset --hard origin/main
             python py/generate_rules.py --mihomo mihomo
-            python py/generate_rules.py --check --mihomo mihomo
-            python py/generate_stash_configs.py --target mainland
-            python py/generate_stash_configs.py --check --target mainland
+            cp cfg/Custom_Clash.ini cfg/Custom_Clash_Mainland.ini
 
             unexpected_changes="$(
               git status --short --untracked-files=all -- . \
@@ -185,37 +165,7 @@ jobs:
           echo "Final revision to publish: $publication_sha"
           echo "publication_sha=$publication_sha" >> "$GITHUB_OUTPUT"
 
-  sync-stash:
-    needs: generate-rules
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    permissions:
-      contents: read
-    steps:
-      - name: Request generated Stash template sync
-        env:
-          GH_TOKEN: ${{ secrets.TARGET_REPO_TOKEN }}
-          SOURCE_SHA: ${{ needs.generate-rules.outputs.publication_sha }}
-        shell: bash
-        run: |
-          set -euo pipefail
-          if [ -z "$GH_TOKEN" ]; then
-            echo "TARGET_REPO_TOKEN is required for cross-repository dispatch." >&2
-            exit 1
-          fi
-          jq -n \
-            --arg source_sha "$SOURCE_SHA" \
-            '{
-              event_type: "sync-generated-stash",
-              client_payload: {source_sha: $source_sha}
-            }' |
-            gh api \
-              --method POST \
-              repos/Aethersailor/Custom_Stash_Rules/dispatches \
-              --input -
-
-  # Generation and format validation already ran against the exact worktree that
-  # was published. Purge its changed cache keys without re-running unrelated tests.
+  # Purge the cache keys belonging to the published generation result.
   purge-generated:
     needs: generate-rules
     permissions:
